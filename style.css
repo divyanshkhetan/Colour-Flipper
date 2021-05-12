@@ -1,0 +1,153 @@
+*{
+	padding: none;
+	margin: none;
+	font-family: sans-serif;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+}
+body{
+	margin: 0px;
+}
+.container{
+	width: 100%;
+	overflow: hidden;
+}
+
+header{
+	background: #ffffff;
+	min-height: 50px;
+	position: relative;
+	/*display: box;*/
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	/*margin-bottom: 5px;*/
+}
+
+header a{
+	text-decoration: none;
+	color: #063251;
+	font-size: 1rem;
+	transition: all 0.3s linear;
+}
+
+header a:hover{
+	color: #49a6e9;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0px 10px;
+	font-size: 1.3rem;
+}
+
+
+#branding{
+	float: left;
+	margin-left: 20vw;
+	margin-top: 2px;
+}
+
+#branding h1{
+	font-size: 1.5rem;
+	color: #49a6e9;
+	font-family: Brush Script MT;
+	margin-top: 10px
+}
+
+header nav{
+	float: right;
+	margin-right: 20vw;
+	margin-top: 2px;
+}
+
+header nav ul{
+	margin-top: 10px;
+}
+
+.container{
+	/*margin-top: 10vh;*/
+	text-align: center;
+}
+
+.container h2{
+	font-size: 2.5rem;
+	background-color: #222222;
+	color: #ffffff;
+	padding: 2rem 2rem;
+	border-radius: 0.7rem;
+	display: inline-block;
+	margin-top: 30vh;
+}
+
+.container h2 span{
+	color: #49a6e9;
+}
+
+section{
+	min-height: 100vh;
+	background-color: #f1f5f8;
+	overflow: none;
+	transition: all 0.5s ease-in-out;
+}
+
+#btn{
+	background: transparent;
+	font-weight: 600;
+	margin: 0;
+	padding: 10px 10px;
+	border-radius: 0.2rem;
+	border: 2px solid #222222;
+	display:block;
+	margin: 0px auto;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	position: relative;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);	
+}
+
+#btn:hover{
+	background: #222222;
+	color: #ffffff;
+}
+
+@media(max-width: 550px){
+
+	.container h2{
+		width: 70%;
+		font-size: 1.2rem;
+	}
+
+	#branding{
+		display: grid;
+		justify-content: center;
+		margin-left: 0px;
+		/*margin:2px auto;*/
+		float: none;
+	}
+
+	#branding h1{
+		/*font-size: 1.5rem;*/
+		font-weight: 750;
+		/*text-transform:  uppercase;*/
+	}
+
+	header nav{
+		float: none;
+		min-width: 100vw;
+		position: absolute;
+	}
+
+	header nav ul{
+		padding-left: 0px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media(max-width: 700px){
+	
+	.container h2{
+		width: 70%;
+		font-size: 1.2rem;
+	}
+}
